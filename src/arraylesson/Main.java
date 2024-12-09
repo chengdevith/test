@@ -109,6 +109,16 @@ public class Main {
                                 break;
                             case 2:
                                 System.out.println("-----<<Search by flow>>-----");
+                                System.out.println("Enter the floor number: ");
+                                // validation here
+                                floorNum = input.nextInt();
+
+                                System.out.println("Result of Floor: "+ floorNum);
+
+                                for (int j = 0; j < condo[floorNum-1].length; j++) {
+                                    System.out.print(condo[floorNum-1][j]);
+                                }
+                                System.out.println();
                                 break;
                             case 3:
                                 System.out.println("-----<<Search by row and col >>-----");
